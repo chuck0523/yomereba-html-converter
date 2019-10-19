@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="js">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>ヨメレバ 変換くん</title>
+	<style>
+		.wrapper {
+			display: flex;
+			flex-direction: column;
+			max-width: 700px;
+			margin: 30px auto;
+			padding: 10px 30px 40px;
+			border: 1px solid #aaa;
+			border-radius: 5px;
+			background-color: #fefefe;
+		}
+
+		main {
+			display: flex;
+			margin-right: 30px;
+		}
+
+		section {
+			display: flex;
+		}
+
+		textarea {
+			min-width: 300px;
+			min-height: 150px;
+			margin-right: 30px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<h1>ヨメレバ 変換くん</h1>
+		<p>ヨメレバの生成するHTMLにスタイルを充て、さらにHTMLのクラス名を短縮します。(Amazon, Kindle, 楽天ブックス, Koboにのみ対応)
+		</p>
+		<main>
+			<div>
+				<h2>変換前のHTML</h2>
+				<textarea id="html_input" placeholder="ここにヨメレバで生成したHTMLを入力"></textarea>
+			</div>
+			<div>
+				<h2>変換後のHTML</h2>
+				<textarea id="html_output" readonly></textarea>
+				<p>↑↑これをコピーしてお使いください</p>
+			</div>
+		</main>
+		<section>
+			<div>
+				<div id="preview"></div>
+			</div>
+		</section>
+		<section>
+			<div>
+				<h4>注意書き</h4>
+				<p>このページは個人が非公式で作ったものになります。作者については<a href="https://twitter.com/chuck_blogger">こちら</a>からどうぞ。</p>
+				<p>ヨメレバ 公式ページ: <a href="https://yomereba.com/">書籍紹介ブログパーツ ヨメレバ</p>
+				</a>
+			</div>
+		</section>
+	</div>
+</body>
+
+</html>
